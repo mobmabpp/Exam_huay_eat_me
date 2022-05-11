@@ -28,8 +28,8 @@ var feature = [{
 ]
 
 //Add Content Fonts
-var contentfont1 = "ONLINE CREATIVE WEBSITE"
-var contentfont2 = "Presented by Aj. NesT the Series"
+var contentfont1 = "Piyarat"
+var contentfont2 = "MobmabPP"
 
 //Set & Call EJS
 app.set('view engine', 'ejs')
@@ -39,12 +39,22 @@ app.use(express.static('public'))
 
 //Back-End NodeJS Display
 app.get("/hello", (req, res) => {
-    res.send("Hello NodeJS Test!")
+    res.send("สวัสดีชาวโลก ")
 })
 
 //New Font-End EJS Show HTML Display
 app.get("/", (req, res) => {
     res.render('index', {
+        userid: id,
+        status: status,
+        obj_user_list: user_list,
+        contentfont1: contentfont1,
+        contentfont2: contentfont2
+    })
+})
+
+app.get("/", (req, res) => {
+    res.render('profile', {
         userid: id,
         status: status,
         obj_user_list: user_list,

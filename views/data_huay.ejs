@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>data_huay</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>DATE</th>
+            <th>PRISE</th>
+            <th>NO.</th>
+        </tr>
+        <% exam.forEach(function(item) { %>
+            <tr>
+                <td>
+                    <%= item.ID %>
+                </td>
+                <td>
+                    <%= item.DATE %>
+                </td>
+                <td>
+                    <%= item.PRISE %>
+                </td>
+                <td>
+                    <%= item.NO. %>
+                </td>
+            </tr>
+            <% }) %>
+    </table>
+</body>
+
+</html>
